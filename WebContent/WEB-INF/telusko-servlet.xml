@@ -14,13 +14,15 @@ http://www.springframework.org/schema/context/spring-context.xsd">
 
 <context:component-scan base-package="com.telusko" />
 <mvc:annotation-driven />
+<mvc:default-servlet-handler/>
 
-<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>
-<bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+<!-- <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/> -->
+<bean id="jspViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
-<property name="prefix" value="/WEB-INF/" />
+<property name="prefix" value="/WEB-INF/jsp/" />
 <property name="suffix" value=".jsp" />
 </bean>
+
 
 </beans>
 
