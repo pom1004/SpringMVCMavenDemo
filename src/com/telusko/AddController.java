@@ -8,7 +8,7 @@ public class AddController {
 	
 	@RequestMapping("/add")
 	public void add() {
-		System.out.println("I am here.");
+		System.out.println("I am here. Lol");
 	}
 
 }
