@@ -8,6 +8,7 @@
 </head>
 <body>
 	I am here
-	Result is <%= request.getAttribute("re") %>
+	Result is <%= request.getAttribute("result") %><br>
+	Another way of getting result is: ${result}
 </body>
 </html>

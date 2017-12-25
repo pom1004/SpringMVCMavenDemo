@@ -18,7 +18,7 @@ public class AddController {
 		System.out.println("i: "+i+ " j:"+j);
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("display");
-		mv.addObject("re", (i+j));
+		mv.addObject("result", (i+j));
 		
 		return mv;
 	}
